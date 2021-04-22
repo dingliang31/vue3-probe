@@ -32,6 +32,9 @@
               <el-menu-item index="/directive" :route="{
                 path: '/directive'
               }">Directive</el-menu-item>
+              <el-menu-item index="/table" :route="{
+                path: '/table'
+              }">Table</el-menu-item>
           </el-submenu>
         </el-menu>
       </el-aside>

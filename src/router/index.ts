@@ -23,11 +23,15 @@ const routes: Array<RouteRecordRaw> = [
   }, {
     path: '/amap',
     name: 'MapChart',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Map/MapChart.vue')
+    component: () => import(/* webpackChunkName: "amap" */ '../views/Map/MapChart.vue')
   }, {
     path: '/directive',
     name: 'Directive',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Directive/index.vue')
+    component: () => import(/* webpackChunkName: "directive" */ '../views/Directive/index.vue')
+  }, {
+    path: '/table',
+    name: 'Table',
+    component: () => import(/* webpackChunkName: "table" */ '../views/Table/index.vue')
   }
 ]
 
