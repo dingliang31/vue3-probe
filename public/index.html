@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <script src="/echarts/echarts.js"></script>
+    <!-- <script src="/echarts/echarts.js"></script> -->
     <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.14&key=c6860438bcddf4b3994139043580e482"></script>
   </head>
   <body>
@@ -16,4 +16,25 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <script src='../src/learn/promise.load.js'></script>
+  <script>
+    // MyPromise.resolve().then(() => {
+    //   console.log(0);
+    //   return MyPromise.resolve(4);
+    // }).then((res) => {
+    //   console.log(res)
+    // })
+
+    // MyPromise.resolve().then(() => {
+    //   console.log(1);
+    // }).then(() => {
+    //   console.log(2);
+    // }).then(() => {
+    //   console.log(3);
+    // }).then(() => {
+    //   console.log(5);
+    // }).then(() =>{
+    //   console.log(6);
+    // })
+  </script>
 </html>
