@@ -12,8 +12,8 @@
   import vue, { defineComponent, ref, toRefs, reactive, onMounted, computed } from 'vue';
   import { useRoute, useRouter } from 'vue-router'
   import { useStore } from 'vuex'
-  import * as pubMtd from '@/utils/publicMethods.ts'
-	import cOutside from '@/components/click-outside'
+  import * as pubMtd from '@/utils/publicMethods'
+	import cOutside from '@/directives/click-outside'
 
   export default defineComponent({
     name: 'click-outside',

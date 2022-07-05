@@ -9,7 +9,7 @@
   import { useRoute, useRouter } from 'vue-router'
   import { useStore } from 'vuex'
   import * as pubMtd from '@/utils/publicMethods'
-	import drag from '@/components/drag'
+	import drag from '@/directives/drag'
   export default {
     name: 'drag',
     components: {

@@ -6,13 +6,27 @@ import {
   RouteLocationNormalized,
   NavigationGuardNext
 } from 'vue-router';
-import Home from '../views/Home.vue'
+import Main from '../views/Main/index.vue'
+import Login from '../views/Login/login.vue'
+import Register from '../views/Login/register.vue'
+
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    redirect: '/login'
+  }, {
+    path: '/login',
+    name: 'Login',
+    component: Login
+  }, {
+    path: '/register',
+    name: 'Register',
+    component: Register
+  }, {
+    path: '/main',
+    name: 'Main',
+    component: Main
   }, {
     path: '/map',
     name: 'Map',
@@ -32,6 +46,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/table',
     name: 'Table',
     component: () => import(/* webpackChunkName: "table" */ '../views/Table/index.vue')
+  },
+  {
+    path: '/:error*',
+    name: 'ErrorPage',
+    component: () => import(/* webpackChunkName: "errorPage" */ '../views/ErrorPage/index.vue')
   }
 ]
 
